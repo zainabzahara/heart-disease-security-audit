@@ -9,9 +9,9 @@ Trains a validated MLP classifier on clinical tabular data, then subjects it to 
 | Phase | Attack Type | AUC Result |
 |-------|-------------|------------|
 | Baseline | Clean model | 0.91 |
-| Phase 2A | Naïve rule-based spoof (2 features, ±20%) | 0.91 — no degradation |
-| Phase 2B | Unrestricted greedy search (3 features, 80% budget) | 0.20 — implausible |
-| Phase 2C | Constrained CaFA-style attack (5 features, 5% × 5 steps) | 0.62 — **stealthy** |
+| Phase 2A | Naïve rule-based spoof (2 features, ±20%) | ≈ 0.91 — no degradation |
+| Phase 2B | Unrestricted greedy search (3 features, 80% budget) | ≈0.20 — implausible |
+| Phase 2C | Constrained CaFA-style attack (5 features, 5% × 5 steps) |≈0.62 — **stealthy** |
 
 **Key finding:** a strictly constrained, integer-rounded, distributed perturbation budget can covertly collapse model confidence while remaining clinically imperceptible.
 
